@@ -7,7 +7,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 /**
  *
- * @author amaia
+ * @author amaia + imanol + andoni
  */
 public class Programa_Jolasak 
 {
