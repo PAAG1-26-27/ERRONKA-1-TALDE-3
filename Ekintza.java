@@ -20,6 +20,7 @@ public class Ekintza
     private LocalDate Ekintza_data;
     private String Izaera;
     private String Mota;
+    private double Prezioa;
     
     public Ekintza()
     {
@@ -27,16 +28,18 @@ public class Ekintza
         Lekua="Non";
         Ekintza_data= LocalDate.now();
         Izaera="Ezezaguna";
-        Mota="Zelakoa";    
+        Mota="Zelakoa"; 
+        Prezioa=0.00;
     }//eraikitzailea.
     
-    public Ekintza (String i, String L, LocalDate d, String iz, String m)
+    public Ekintza (String i, String L, LocalDate d, String iz, String m, double p)
     {
         this.Ekintza_id=i;
         this.Lekua=L;
         this.Ekintza_data=d;
         this.Izaera=iz;
         this.Mota=m;
+        this.Prezioa=p;
         
     }//eraikitzailea parametroekin
     
@@ -137,37 +140,59 @@ public class Ekintza
         return Mota;
     }//setMota parametroekin
     
+    public double setPrezioa()
+    {
+        double p;
+        Scanner sc= new Scanner(System.in);
+        System.out.println("Sartu ekintzaren prezioa: ");
+        p=sc.nextDouble();
+        Prezioa=p;
+        
+        return Prezioa;
+    }//setPrezioa
+    
+    public double setPrezioa(double p)
+    {
+        this.Prezioa=p;
+        return Prezioa;
+    }//setPrezioa parametroekin
+    
     
     
     public String getEkintza_id()
     {
-        System.out.println("Ekintzaren id zenbakia: "+Ekintza_id);
+        
         return Ekintza_id;
     }//getEkintza_id
     
     public String getLekua()
     {
-        System.out.println("Ekintzaren lekua: "+Lekua);
+       
         return Lekua;
     }//getLekua
     
     public LocalDate getEkintza_data()
     {
-        System.out.println("Ekintzaren eguna: "+Ekintza_data);
+        
         return Ekintza_data;
     }//getEkintza_data
     
     public String getIzaera()
     {
-      System.out.println("Ekintzaren izaera: "+Izaera);
+      
       return Izaera;
     }//getIzaera
     
     public String getMota()
     {
-       System.out.println("Ekintza mota: "+Mota); 
+       
        return Mota;
     }//getMota
+    
+    public double getPrezioa()
+    {
+        return Prezioa;
+    }//getPrezioa
     
     public void getAll_Ekintza()
     {
@@ -176,5 +201,6 @@ public class Ekintza
       getEkintza_data();
       getIzaera();
       getMota();
+      getPrezioa();
     }//getAll_Ekintza
 }//class
