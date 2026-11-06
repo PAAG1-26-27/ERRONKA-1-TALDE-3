@@ -24,7 +24,7 @@ public class Langilea extends Pertsona{
         Departamentua = "Admin";
     }
     
-    public Langilea (String L_Id, String DepartString N, String I, String a, LocalDate D, String t)
+    public Langilea (String L_Id, String Depart,String N, String I, String a, LocalDate D, String t)
     {
         super(N, I, a, D, t);
         Langile_Id = L_Id;
