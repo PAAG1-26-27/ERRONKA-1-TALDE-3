@@ -38,37 +38,37 @@ public class Pertsona {
         Telefonoa=t;
     }
     
-    public void setNAN (){
+    public String setNAN (){
         System.out.println("Sartu NAN zenbakia");
         String N;
         N = sc.nextLine();
-        NAN = N;
+        return NAN = N;
     }
     
-    public void setNAN (String N){
-        NAN = N;
+    public String setNAN (String N){
+        return NAN = N;
     }
     
-    public void setIzena (){
+    public String setIzena (){
         System.out.println("Sartu izena");
         String I;
         I = sc.nextLine();
-        Izena = I;
+        return Izena = I;
     }
     
-    public void setIzena (String I){
-        Izena = I;
+    public String setIzena (String I){
+        return Izena = I;
     }
     
-    public void setAbizena (){
+    public String setAbizena (){
         System.out.println("Sartu abizena");
         String a;
         a = sc.nextLine();
-        Abizena = a;
+        return Abizena = a;
     }
     
-    public void setAbizena (String a){
-        Abizena = a;
+    public String setAbizena (String a){
+        return Abizena = a;
     }
     
     public LocalDate setJaiotze_data (){
@@ -94,20 +94,20 @@ public class Pertsona {
         return Jaiotze_data;
     }
     
-    public void setJaiotze_data (LocalDate D){
-        Jaiotze_data = D;
+    public LocalDate setJaiotze_data (LocalDate D){
+        return Jaiotze_data = D;
     }
     
-    public void setTelefonoa (){
+    public String setTelefonoa (){
         System.out.println("Sartu telefonoa");
         String t;
         t = sc.nextLine();
-        Telefonoa = t;
+        return Telefonoa = t;
     }
     
-    public void setTelefonoa (String t){
-        Telefonoa = t;
-    }
+    public String setTelefonoa (String t){
+        return Telefonoa = t;
+    }}
     
     public String getNAN (){
         return NAN;
