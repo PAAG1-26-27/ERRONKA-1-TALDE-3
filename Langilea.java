@@ -19,11 +19,14 @@ public class Langilea extends Pertsona{
     Scanner sc = new Scanner(System.in);
     
     public Langilea (){
+        super();
         Langile_Id = "A0B";
         Departamentua = "Admin";
     }
     
-    public Langilea (String L_Id, String Depart){
+    public Langilea (String L_Id, String DepartString N, String I, String a, LocalDate D, String t)
+    {
+        super(N, I, a, D, t);
         Langile_Id = L_Id;
         Departamentua = Depart;
     }
@@ -59,6 +62,7 @@ public class Langilea extends Pertsona{
     }
     
     public void getAllLangilea(){
+        getAllPers();
         getLangile_Id();
         getDepartamentua();
     }
