@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
 
-package com.mycompany.pertsona;
+package com.mycompany.erronka01_klaseak;
 import java.util.Date;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -26,16 +26,16 @@ public class Pertsona {
         NAN = ("ABCDEFGH1");
         Izena = ("Izena");
         Abizena = ("Abizena");
-        Jaiotze_data = LocalDate.parse("2018-08-01");
+        Jaiotze_data = LocalDate.parse("0018-08-01");
         Telefonoa = ("123456789");
     }
     
     public Pertsona (String N, String I, String a, LocalDate D, String t) {
-        N = ("ABCDEFGH1");
-        I = ("Izena");
-        a = ("Abizena");
-        D = LocalDate.parse("2018-08-01");
-        t = ("123456789");
+        NAN=N;
+        Izena=I;
+        Abizena=a;
+        Jaiotze_data=D;
+        Telefonoa=t;
     }
     
     public void setNAN (){
@@ -46,8 +46,6 @@ public class Pertsona {
     }
     
     public void setNAN (String N){
-        System.out.println("Sartu NAN zenbakia");
-        N = sc.nextLine();
         NAN = N;
     }
     
@@ -59,8 +57,6 @@ public class Pertsona {
     }
     
     public void setIzena (String I){
-        System.out.println("Sartu izena");
-        I = sc.nextLine();
         Izena = I;
     }
     
@@ -72,21 +68,33 @@ public class Pertsona {
     }
     
     public void setAbizena (String a){
-        System.out.println("Sartu abizena");
-        a = sc.nextLine();
         Abizena = a;
     }
     
-    public void setJaiotze_data (){
-        System.out.println("Sartu jaiotze data");
-        LocalDate D;
-        D = LocalDate.parse(sc.nextLine());
-        Jaiotze_data = D;
+    public LocalDate setJaiotze_data (){
+        LocalDate d;
+
+        Scanner sc = new Scanner(System.in);
+        DateTimeFormatter formato = DateTimeFormatter.ofPattern("dd/MM/yyyy");
+
+        System.out.print("Sartu jaiotze data (dd/mm/aaaa): ");
+        String entrada = sc.nextLine();
+
+        try 
+        {
+            d = LocalDate.parse(entrada, formato);
+            System.out.println("Data ondo irakurrita: " + d);
+            Jaiotze_data=d;
+            return Jaiotze_data;
+        }//try
+        catch (DateTimeParseException e) 
+        {
+            System.out.println("Dataren formatua okerra da.");
+        }//catch
+        return Jaiotze_data;
     }
     
     public void setJaiotze_data (LocalDate D){
-        System.out.println("Sartu jaiotze data");
-        D = LocalDate.parse(sc.nextLine());
         Jaiotze_data = D;
     }
     
@@ -98,28 +106,35 @@ public class Pertsona {
     }
     
     public void setTelefonoa (String t){
-        System.out.println("Sartu telefonoa");
-        t = sc.nextLine();
         Telefonoa = t;
     }
     
-    public void getNAN (){
-        System.out.println("Ekintzaren Id-a hau da " + NAN);
+    public String getNAN (){
+        return NAN;
     }
     
-    public void getIzena (){
-        System.out.println("Ekintzaren Id-a hau da " + Izena);
+    public String getIzena (){
+        return Izena;
     }
     
-    public void getAbizena (){
-        System.out.println("Ekintzaren Id-a hau da " + Abizena);
+    public String getAbizena (){
+        return Abizena;
     }
     
-    public void getJaiotze_data (){
-        System.out.println("Ekintzaren Id-a hau da " + Jaiotze_data);
+    public LocalDate getJaiotze_data (){
+        return Jaiotze_data;
     }
     
-    public void getTelefonoa (){
-        System.out.println("Ekintzaren Id-a hau da " + Telefonoa);
+    public String getTelefonoa (){
+        return Telefonoa;
+    }
+    
+    public void getAllPers()
+    {
+        getNAN();
+        getIzena();
+        getAbizena();
+        getJaiotze_data();
+        getTelefonoa();
     }
 }
