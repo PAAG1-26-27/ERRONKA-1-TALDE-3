@@ -1,9 +1,8 @@
 header {
-	display: block;
-	background-color: green;
-	color: black;
-	font-size: 24px;
-	font-family: serif;
+	display: flex;
+	align-items: center;
+	background-color: forestgreen;
+	padding: 10px 20px;
 }
 
 body {
@@ -14,7 +13,7 @@ body {
 }
 
 footer {
-	background-color: black;
+	background-color: seagreen;
 	color: white;
 	font-size: 14px;
 	font-family: serif;
@@ -93,12 +92,38 @@ footer {
   	transform: translateY(-50%) rotate(180deg); 
 }
 
-.EZAGUTU {
-	margin-left: 300px;
+.EZAGUTU_GAITZAZU {
+	margin-left: 200px;
+	margin-bottom: 10px;
+	background-color: green;
 }
 
 .EKINTZAK {
 	margin-left: 200px;
+	background-color: green;
+}
+
+.MONITOREAK {
+	margin-left: 200px;
+	background-color: green;
+}
+
+.logazo {
+	display: inline-block;
+	background-color: #cbd5e1;
+	padding: 8px 20px;
+	border-radius: 25px;
+	text-decoration: none;
+}
+
+.logazo img {
+	height: 30px;
+	width: auto;
+	display: block;
+}
+
+.Orokorra {
+	margin-left: 150px;
 }
 
 .MONITOREAK {
