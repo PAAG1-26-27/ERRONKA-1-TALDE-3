@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="erronka.css">
+		<title>Ermua_Gaztelekua</title>			
+	</head>
+	
+	<header>
+		<a href="Sarrera.html" class="logazo">
+			<img src="argazkiak/gazteleku.png" alt="Gazteleku Logo">
+		</a>
+		<button class="EZAGUTU_GAITZAZU" id="Ezagutu gaitzazu">EZAGUTU GAITZAZU</button>
+		<button class="EKINTZAK" id="Ekintzak">EKINTZAK</button>
+		<button class="MONITOREAK" id="Monitoreak">MONITOREAK</button>
+	</header>
+	
+	<body>
+		<div class="Karrusela">
+			<button class="atzerako_botoia" id="atzera">&#10094;</button>
+			
+			<div class="karrusel_pasa_paginak">
+				<div class="slide slide_aktiboa">
+					<img src="argazkiak/Gaztelekua.png" >
+					<div class="caption"></div>
+				</div>
+				<div class="slide">
+					<img src="argazkiak/Mendi_buelta.png" >
+					<div class="caption"></div>
+				</div>
+				<div class="slide">
+					<img src="argazkiak/Akanpada.png" >
+					<div class="caption"></div>
+				</div>
+			</div>
+			
+			<button class="aurrerako_botoia" id="aurrera">&#10094;</button>
+		</div>
+	
+	<script>
+		const slides = document.querySelectorAll('.karrusel_pasa_paginak > div');
+		let i = 0;
+
+		function cambiarSlide(nuevoIndice) {
+			slides[i].classList.remove('slide_aktiboa');
+			i = (nuevoIndice + slides.length) % slides.length;
+			slides[i].classList.add('slide_aktiboa');
+		}
+
+		document.getElementById('atzera').onclick = () => cambiarSlide(i - 1);
+		document.getElementById('aurrera').onclick = () => cambiarSlide(i + 1);
+	</script>
+	
+		<div class="Orokorra">
+			<h2>GUK NORK GARA?</h2> </br>
+			<p>Ermuko udaletxeari esker sortutako gaztelekua gara. Hemen, herrikoentzat eta kanpotarrentzako aktibitateak antolatuko ditugu.</p> </br>
+			<p>Informazio gehiago jakin nahi baduzu egin klik 'EZAGUTU GAITZAZU' botoian.</p>
+		</div>
+		
+	<footer>
+		<h3>KONTAKTU INFORMAZIOA</h3> </br>
+		<p> Tel: 123456789</p> </br>
+		<p> Email-a: eibar@uni.eus</p> </br>
+		<p> Helbidea: Ermua</p> </br>
+	</footer>
+	</body>
+</html>
