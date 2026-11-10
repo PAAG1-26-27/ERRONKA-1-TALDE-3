@@ -93,32 +93,38 @@ footer {
 }
 
 .EZAGUTU_GAITZAZU {
-	margin-left: 200px;
-	margin-bottom: 10px;
 	background-color: forestgreen;
 	border:solid green;
-	padding:8px;
-	border-radius:16px;
+	padding:4px;
+	margin:8px 70px;
+	border-radius:24px;
+	width:180px;
+	height:64px;
+	font-size:16px;
 }
 .EZAGUTU_GAITZAZU:hover{background-color:green;}
 
 .EKINTZAK {
-	margin-left: 200px;
-	margin-bottom: 10px;
 	background-color: forestgreen;
 	border:solid green;
-	padding:8px;
-	border-radius:16px;
+	padding:4px;
+	margin:8px 70px;
+	border-radius:24px;
+	width:180px;
+	height:64px;
+	font-size:16px;
 }
 .EKINTZAK:hover{background-color:green;}
 
 .MONITOREAK {
-	margin-left: 200px;
-	margin-bottom: 10px;
 	background-color: forestgreen;
 	border:solid green;
-	padding:8px;
-	border-radius:16px;
+	padding:4px;
+	margin:8px 70px;
+	border-radius:24px;
+	width:180px;
+	height:64px;
+	font-size:16px;
 }
 .MONITOREAK:hover{background-color:green;}
 
@@ -126,20 +132,22 @@ footer {
 	display: inline-block;
 	background-color: #cbd5e1;
 	padding: 8px 20px;
-	border-radius: 25px;
+	margin:8px 0px 16px 0px;
+	border-radius: 64px;
 	text-decoration: none;
+	width:240px;
+	height:130px;
 }
 
 .logazo img {
-	height: 30px;
+	height: 120px;
 	width: auto;
 	display: block;
+	margin: auto;
 }
 
 .Orokorra {
 	margin-left: 150px;
 }
 
-.MONITOREAK {
-	margin-left: 300px
-}
+
