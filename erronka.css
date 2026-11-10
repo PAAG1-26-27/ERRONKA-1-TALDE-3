@@ -95,18 +95,32 @@ footer {
 .EZAGUTU_GAITZAZU {
 	margin-left: 200px;
 	margin-bottom: 10px;
-	background-color: green;
+	background-color: forestgreen;
+	border:solid green;
+	padding:8px;
+	border-radius:16px;
 }
+.EZAGUTU_GAITZAZU:hover{background-color:green;}
 
 .EKINTZAK {
 	margin-left: 200px;
-	background-color: green;
+	margin-bottom: 10px;
+	background-color: forestgreen;
+	border:solid green;
+	padding:8px;
+	border-radius:16px;
 }
+.EKINTZAK:hover{background-color:green;}
 
 .MONITOREAK {
 	margin-left: 200px;
-	background-color: green;
+	margin-bottom: 10px;
+	background-color: forestgreen;
+	border:solid green;
+	padding:8px;
+	border-radius:16px;
 }
+.MONITOREAK:hover{background-color:green;}
 
 .logazo {
 	display: inline-block;
