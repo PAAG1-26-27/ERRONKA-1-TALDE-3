@@ -146,6 +146,15 @@ footer {
 	margin: auto;
 }
 
+.phbnagusi{background:forestgreen;
+			border: 6px Double white;
+			border-radius: 48px;
+			font-size:28px;
+			text-align:center;
+			margin:4px;
+			width:220px;
+			height:80px ;}
+
 .Orokorra {
 	margin-left: 150px;
 }
