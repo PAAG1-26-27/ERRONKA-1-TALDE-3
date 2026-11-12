@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html >
+	<head>
+		<title>Ermua_Gaztelekua </title>
+		<link rel="stylesheet" href="erronka.css">
+		<script src="erronka.js"></script>
+		<style>
+			.urte {margin:16px 16px 4px 16px;
+					}
+			.ekintzak{	border: 2px solid forestgreen;
+						border-radius:12px;
+						margin:12px;
+						padding:0px;
+						text-align:left;
+						border-collapse:collapse;
+						}
+			.argazkiakEkin{ height: 128px;
+							width: 128px;
+							clip-path: rect(5px 128px 128px 5px round 20%);
+							}
+			.phbotoia{	background:forestgreen;
+						border: solid green;
+						border-radius: 12px;
+						text-align:center;
+						margin:4px;
+						width:100px;
+						height:32px ;
+					}			
+		</style>
+	</head>
+	
+	<body style="margin:0px;border-collapse:collapse;">
+		<header style="margin:0px;padding:0px 8px 0px 8px">
+		<a href="Sarrera.html" class="logazo">
+			<img src="argazkiak/gazteleku.png" alt="Gazteleku Logo">
+		</a>
+		<nav style="width:1000px;margin:90px 16px 0px 16px;">
+			<button class="EZAGUTU_GAITZAZU" id="Ezagutu gaitzazu">EZAGUTU GAITZAZU</button>
+			<button class="EKINTZAK" id="Ekintzak" Style="border:3px solid white;background-color:green;">EKINTZAK</button>
+			<button class="MONITOREAK" id="Monitoreak">MONITOREAK</button>
+		</nav>
+		<div style="margin:8px 0px 8px auto;">
+			<div style="text-align:center"> <a style="cursor:pointer;">EUS </a> | <a style="cursor:pointer;">EN </a> </div>  
+			<button class="phbnagusi" onclick="bazkzaraireki()">Parte hartu </button> <br/>
+			<div style="text-align:center;cursor:pointer"> <a onclick="bazkformireki()">Bazkide bihurtu </a> </div>
+		</div>
+		</header>
+		<br/>
+		<section style="display:flex;margin:10px">
+			<aside style="background-color:lightgray;padding:4px;width:475px;height:500px;text-align:center;border-radius: 10px;margin:60px 30px 30px 30px" > 
+				<button class="urte" id="b26" onclick="f2026()" Style="width:120px;height:40px;background-color:darkgreen;border-radius: 10px;">2026</button>
+				<button class="urte" id="b27" onclick="f2027()" Style="width:120px;height:40px;background-color:forestgreen;border-radius: 10px;">2027</button>
+				<div style="height:435px;overflow:scroll;">
+					<section id="2026" style="display:block">
+										
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/loatzo_tolosa.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5> Mendia txangoa  
+												<br/>
+												<span style="font-size:8px" >kodea: 82</span>
+												<br/>
+												<span style="font-size:8px" >data: 07/05/2026</span>
+											</h5>
+											<p style="font-size:12px">Loatzoko mendiko senderismo txangoa.</p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+							
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/kostaldea_zumaia.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5>Itsaz ertzeko kanpina 
+												<br/>
+												<span style="font-size:8px" >kodea: 74</span>
+												<br/>
+												<span style="font-size:8px" >data: 07/07/2026-12/07/2026</span>
+											</h5>
+											<p style="font-size:12px">Zumaiako kostaldean 5 eguneko kampineko abentura. </p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+							
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/surf_donosti.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5>Surf klasea 
+												<br/>
+												<span style="font-size:8px" >kodea: 34</span>
+												<br/>
+												<span style="font-size:8px" >data: 08/08/2026</span>
+											</h5>
+											<p style="font-size:12px">Donostiako hondatzan surf kutso bat. </p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+							
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/museo_getaria.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5>Museoa tour 
+												<br/>
+												<span style="font-size:8px" >kodea: 02</span>
+												<br/>
+												<span style="font-size:8px" >data: 21/11/2026</span>
+											</h5>
+											<p style="font-size:12px">Getariako Balenciaga museoaren tourra. </p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+
+					</section>
+					<section id="2027" style="display:none">
+					
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/tour_gazteiz.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5>Hiriko tourra 
+												<br/>
+												<span style="font-size:8px" >kodea: 20</span>
+												<br/>
+												<span style="font-size:8px" >data: 23/01/2027</span>
+											</h5>
+											<p style="font-size:12px" >Gazteiz  hiriaren tour txangoa.</p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+							
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/concierto.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5>Kontzertu privatua 
+												<br/>
+												<span style="font-size:8px" >kodea: 51</span>
+												<br/>
+												<span style="font-size:8px" >data: 17/02/2027</span>
+											</h5>
+											<p style="font-size:12px">""-ren kontzertu privatua.</p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+							
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/padel_zumaia.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5>Paddle klaseak 
+												<br/>
+												<span style="font-size:8px" >kodea: 06</span>
+												<br/>
+												<span style="font-size:8px" >data: 08/05/2027</span>
+											</h5>
+											<p style="font-size:12px">Zumaiako lubaki polikiroldegian paddle klaseak.</p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+							
+							<article class="ekintzak" >						
+								<table style="width:100%;">
+									<tr > 
+										<td rowspan="2" style="width:130px"> <img src="argazkiak/natura_mallabia.jpg"  class="argazkiakEkin"/></td>
+										<td colspan="2" style="margin:0px 0px 0px 12px;">
+											<h5>Natura ikerketa 
+												<br/>
+												<span style="font-size:8px" >kodea: 61</span>
+												<br/>
+												<span style="font-size:8px" >data: 08/07/2027</span>
+											</h5>
+											<p style="font-size:12px" onclick="bazkzaraireki()">Mallabiako ingurumenaren ikerketa txangoa.</p>
+										</td>
+									</tr>
+									<tr style="text-align:right;"> 
+										<td> <button class="phbotoia" onclick="bazkzaraireki()">parte hartu </button></td> 
+									</tr>
+								</table>
+							</article>
+							
+					</section>
+				</div>
+			</aside>
+			
+			<article style="margin:60px 30px 30px 120px"> <!--Ekintza destacada -->
+				<h1>Ekintza nabarmena	</h1>
+				<p>Aurtengo nabaritako ekintza</p>
+			</article>
+		</section>
+		
+		<form class="bazkidebihurtuform" id="bazkbihuform" >
+				<div style="display:flex">
+				<h4>Bazkide bihurtu</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkformitxi()">X</p>
+				</div>
+				<label>NAN* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Izena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Abizena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Telefonoa* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Jaiotze data* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nazionalitatea* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<br/>
+				<button type="submit"> Bidali </button>
+				
+			</form>
+		
+		<div class="partehartuform" id="bazkzara">
+			<div style="display:flex">
+				<h4>Parte hartu <br/> <span style="font-size:12px">Bazkidea zara?<span></h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkzaraitxi()">X</p>
+			</div>
+			<button onclick="phbazkireki()">Bai</button> <button onclick="phezbazkireki()">Ez</button>
+			<a style="font-size:8px;cursor:pointer;" onclick="bazkformireki()">Bazkide bihurtu</a>
+		</div>
+		
+		<form class="partehartuform" id="bazkphform">
+			<div style="display:flex">
+				<h4>Parte hartu</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phbazkitxi()">X</p>
+				</div>
+				<label>Bazkide kodea* </label><br/>
+				<input type="text" required ></input> <br/>
+				<label>>Ekintza kodea* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Bidali </button>
+		
+		</form>
+		<form class="partehartuform" id="ezbazkphform">
+			<div style="display:flex">
+				<h4>Parte hartu</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phezbazkitxi()">X</p>
+				</div>
+				<label>NAN* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Izena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Abizena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Telefonoa* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Jaiotze data* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nazionalitatea* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>>Ekintza kodea* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Bidali </button>
+		</form>
+		
+		<footer >
+			<h3>KONTAKTU INFORMAZIOA</h3> 
+			<p> Tel: 123456789</p> 
+			<p> Email-a: eibar@uni.eus</p> 
+			<p> Helbidea: Ermua</p> 
+		</footer>
+		
+		<script>
+			function f2026(){document.getElementById("2026").style.display="block";	
+							document.getElementById("b26").style.background="green";
+							document.getElementById("2027").style.display="none";
+							document.getElementById("b27").style.background="forestgreen";
+							}
+			function f2027(){
+							document.getElementById("2027").style.display="block";
+							document.getElementById("b27").style.background="green";
+							document.getElementById("2026").style.display="none";
+							document.getElementById("b26").style.background="forestgreen";
+							}
+
+
+		</script>
+		
+		
+	</body>
+</html>
