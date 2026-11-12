@@ -154,9 +154,37 @@ footer {
 			margin:4px;
 			width:220px;
 			height:80px ;}
+.phbnagusi:hover{	background-color:green;
+					
+}
 
 .Orokorra {
 	margin-left: 150px;
 }
 
+.partehartuform {	background-color:lightgray;
+						padding:16px;
+						width:300px;
+						border:2px solid gray;
+						border-radius: 32px;
+						display:none;
+						position:absolute;
+						z-index:3;
+						right:16px;
+						top:130px;
+						
+						
+				}
 
+.bazkidebihurtuform {	background-color:lightgray;
+						padding:16px;
+						width:300px;
+						border:2px solid gray;
+						border-radius: 32px;
+						display:none;
+						position:absolute;
+						z-index:2;
+						right:16px;
+						top:160px;
+						
+				}
