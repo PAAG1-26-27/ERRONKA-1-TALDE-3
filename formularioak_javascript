@@ -1,0 +1,93 @@
+<form class="bazkidebihurtuform" id="bazkbihuform" >
+				<div style="display:flex">
+				<h4>Bazkide bihurtu</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkformitxi()">X</p>
+				</div>
+				<label>NAN* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Izena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Abizena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Telefonoa* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Jaiotze data* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nazionalitatea* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<br/>
+				<button type="submit"> Bidali </button>
+				
+			</form>
+		
+		<div class="partehartuform" id="bazkzara">
+			<div style="display:flex">
+				<h4>Parte hartu <br/> <span style="font-size:12px">Bazkidea zara?<span></h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="bazkzaraitxi()">X</p>
+			</div>
+			<button onclick="phbazkireki()">Bai</button> <button onclick="phezbazkireki()">Ez</button>
+			<a style="font-size:8px;cursor:pointer;" onclick="bazkformireki()">Bazkide bihurtu</a>
+		</div>
+		
+		<form class="partehartuform" id="bazkphform">
+			<div style="display:flex">
+				<h4>Parte hartu</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phbazkitxi()">X</p>
+				</div>
+				<label>Bazkide kodea* </label><br/>
+				<input type="text" required ></input> <br/>
+				<label>>Ekintza kodea* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Bidali </button>
+		
+		</form>
+		<form class="partehartuform" id="ezbazkphform">
+			<div style="display:flex">
+				<h4>Parte hartu</h4>
+				<p style="margin:0px 0px 0px auto;color:gray;cursor:pointer" onclick="phezbazkitxi()">X</p>
+				</div>
+				<label>NAN* </label><br/>
+				<input type="text" required pattern="[0-9]{8}[A-Z]" placeholder="12345678A"></input> <br/>
+				<label>Izena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Abizena* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>Telefonoa* </label><br/>
+				<input type="text" required pattern="[0-9]{9}"></input> <br/>
+				<label>Jaiotze data* </label><br/>
+				<input type="text" required pattern="\d{4}/(0[1-9]|1[0-2])/(0[1-9]|[12]\d|3[01])" placeholder="UUUU/HH/EE" ></input> <br/>
+				<label>Nazionalitatea* </label><br/>
+				<input type="text" required pattern="[A-Za-zÁÉÍÓÚáéíóúÑñÜü\s]{1,50}"></input> <br/>
+				<label>>Ekintza kodea* </label><br/>
+				<input type="text" required ></input> <br/>
+				<br/>
+				<button type="submit"> Bidali </button>
+		</form>
+		
+		<footer >
+			<h3>KONTAKTU INFORMAZIOA</h3> 
+			<p> Tel: 123456789</p> 
+			<p> Email-a: eibar@uni.eus</p> 
+			<p> Helbidea: Ermua</p> 
+		</footer>
+		
+		<script>
+
+			function bazkformireki() {	document.getElementById("bazkphform").style.display="none";
+										document.getElementById("ezbazkphform").style.display="none";
+										document.getElementById("bazkzara").style.display="none";
+										document.getElementById("bazkbihuform").style.display="block";
+									}
+			function bazkformitxi(){ document.getElementById("bazkbihuform").style.display="none";}
+			
+			function bazkzaraireki(){ 	document.getElementById("bazkbihuform").style.display="none";
+										document.getElementById("bazkzara").style.display="block";}
+			function bazkzaraitxi(){ document.getElementById("bazkzara").style.display="none";}
+			function phbazkireki(){	document.getElementById("bazkzara").style.display="none";
+									document.getElementById("bazkphform").style.display="block";}
+			function phbazkitxi(){document.getElementById("bazkphform").style.display="none";}
+			function phezbazkireki(){document.getElementById("bazkzara").style.display="none";
+									document.getElementById("ezbazkphform").style.display="block";}
+			function phezbazkitxi(){document.getElementById("ezbazkphform").style.display="none";}
+		</script>
