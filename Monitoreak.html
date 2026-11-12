@@ -1,110 +1,226 @@
-<html>
+<!DOCTYPE html>
+<html lang="eu">
 <head>
-<title> Gaztelekua - monitoreak </title>
-<link rel="stylesheet" href="erronka.css">
+    <meta charset="UTF-8">
+    <title>Gaztelekua - monitoreak</title>
+    <link rel="stylesheet" href="erronka.css">
 
 <style>
-	.monitoreak
-	{
-	 display:flex;
-	 flex-wrap:wrap;
-	 flex-direction:row;
-	 width: 45%;
-     background-color: white;
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-     padding:30px;
-	 margin:30px;
-	}
-	
-	
-	
-	img
-	{
-	 width: 45%;
-	}
-	
-	.caption
-	{
-     text-align: left;
-     padding: 30px;
-	 display: flex;
-	 flex-direction: column;
-     align-self: flex-start;
-	 margin-left: 300px;
-	}
-	
-	aside
-	{
-	 width: 30%;
-     padding-left: 15px;
-     margin-left: 15px;
-     float: right;
-     font-style: italic;
-     background-color: lightgray;
-	}
-</style>
+    /* Contenedor principal en Flex */
+    .eduki-nagusia {
+        display: flex;
+        align-items: stretch;
+        gap: 30px;
+        padding: 30px;
+    }
 
+    /* Columna izquierda: 50% del ancho */
+    .monitore-zerrenda {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /* Tarjeta de cada monitor */
+    .monitoreak {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        box-sizing: border-box;
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+        padding: 15px;
+        border-radius: 8px;
+        margin: 0;
+    }
+
+    /* Tamaño exacto de las imágenes sin cambios */
+    .monitoreak img {
+        flex: 0 0 140px;
+        width: 140px;
+        height: 160px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+
+    /* Texto y botón */
+    .monitoreak .caption {
+        flex: 1;
+        position: static !important;
+        pointer-events: auto !important;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        color: black;
+        text-align: left;
+    }
+
+    .btn-monitor {
+        background-color: #2e7d32;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.2s;
+    }
+
+    .btn-monitor:hover {
+        background-color: #1b5e20;
+    }
+
+    /* Columna derecha: 50% del ancho */
+    aside#informazio_gehiago {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #f4f7f4;
+        border-left: 6px solid #2e7d32;
+        box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        padding: 35px;
+        border-radius: 8px;
+        font-style: normal;
+        font-size: 1.05rem;
+        line-height: 1.6;
+        float: none;
+        margin: 0;
+    }
+
+    aside#informazio_gehiago h2 {
+        color: #1b5e20;
+        margin-top: 0;
+        font-size: 1.8rem;
+    }
+
+    /* Estilos del encabezado */
+    header {
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    .hizkuntza_b button {
+        background: transparent;
+        border: none;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+    }
+
+    .header-eskuina {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        color: white;
+    }
+</style>
 </head>
 
 <body>
 
-	<header>
-			
-			<button id="logoa" style=align:top-left>logoa</button>
-				
-			<div class="hizkuntza_b">
-			<button id="eus"style=align:top-right> EUS |</button>
-			<button id= "en" style=align:top-right>| EN </button>
-			</div>
-				
-			<br>
-				
-			<div class="b_printzipalak">
-			<button class="EZAGUTU" id="Ezagutu gaitzazu" style=background-color:dark-green> Ezagutu gaizu </button>
-			<button class="EKINTZAK" id="Ekintzak"> Ekintzak </button>
-			<button class="MONITOREAK" id="Monitoreak"> Monitoreak </button>
-			</div>
-				
-			<button id="PH"style=align:bottom-right> Parte hartu </button>
-			<br>
-			<p id="BB"> Bazkide bihurtu </p>	
-		
-		</header>
-		
-			<div class="monitoreak">	
-					<img src="argazkiak/pertsona1.jpg" >
-						<div class="caption">
-							<h2 id="JON" style="color:black"> Jon </h2>
-							<br>
-							<p style="color:black"> Gaztelekuren parte 04/06/2023-tik </p>
-							</div>
-						</div>
-			
-			<div class="monitoreak">	
-					<img src="argazkiak/pertsona2.jpg" >
-						<div class="caption">
-							<h2 id="ANE" style="color:black"> Ane </h2>
-							<br>
-							<p style="color:black"> Gaztelekuren parte 28/05/2026-tik </p>
-							</div>
-						</div>	
-						
-						
-			<aside>
-			<p id="M">
-			</aside>
-			
-			
-		
-	
-			
-		
-		<footer>
-				<h3> KONTAKTU INFORMAZIOA </h3>
-				<p> Tel.: 123456789</p>
-				<p> Kontaktu email-a: eibar@uni.eus</p>
-				<p> Helbidea: Ermua</p>
-			</footer>
-	
-	</body>
-	
+    <header>
+        <a href="Sarrera.html" class="logazo">
+            <img src="argazkiak/gazteleku.png" alt="Gazteleku Logo">
+        </a>
+
+        <div class="hizkuntza_b">
+            <button id="eus">EUS |</button>
+            <button id="en">EN</button>
+        </div>
+
+        <div class="b_printzipalak">
+            <button class="EZAGUTU_GAITZAZU" id="Ezagutu gaitzazu">Ezagutu gaitzazu</button>
+            <button class="EKINTZAK" id="Ekintzak">Ekintzak</button>
+            <button class="MONITOREAK" id="Monitoreak">Monitoreak</button>
+        </div>
+
+        <div class="header-eskuina">
+            <button id="PH" style="background-color: darkgreen; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">Parte hartu</button>
+            <p id="BB" style="margin: 5px 0 0 0; cursor: pointer;">Bazkide bihurtu</p>
+        </div>
+    </header>
+
+    <main class="eduki-nagusia">
+        <section class="monitore-zerrenda">
+            <div class="monitoreak">    
+                <img src="argazkiak/pertsona1.png" alt="Jon">
+                <div class="caption">
+                    <button class="btn-monitor" 
+                            data-izena="Jon" 
+                            data-parte="Gaztelekuren parte 04/06/2023-tik" 
+                            data-deskribapena="Jon kirol eta aisialdi ekintzen arduraduna da." 
+                            onclick="erakutsi(this)"> Jon </button>
+                    <p style="color:black; margin-top: 10px;">Gaztelekuren parte 04/06/2023-tik</p>
+                </div>
+            </div>
+            <div class="monitoreak">    
+                <img src="argazkiak/pertsona2.png" alt="Ane">
+                <div class="caption">
+                    <button class="btn-monitor" 
+                            data-izena="Ane" 
+                            data-parte="Gaztelekuren parte 28/05/2026-tik" 
+                            data-deskribapena="Ane arte eta kultura tailerren arduraduna da." 
+                            onclick="erakutsi(this)"> Ane </button>
+                    <p style="color:black; margin-top: 10px;">Gaztelekuren parte 28/05/2026-tik</p>
+                </div>
+            </div>
+			<div class="monitoreak">    
+                <img src="argazkiak/pertsona3.png" alt="Jon">
+                <div class="caption">
+                    <button class="btn-monitor" 
+                            data-izena="Maider" 
+                            data-parte="Gaztelekuren parte 03/07/2024-tik" 
+                            data-deskribapena="Monitoreen arduradun printzipala da." 
+                            onclick="erakutsi(this)"> Maider </button>
+                    <p style="color:black; margin-top: 10px;">Gaztelekuren parte 03/07/2024tik</p>
+                </div>
+            </div>
+			<div class="monitoreak">    
+                <img src="argazkiak/metal_sonic.png" alt="Jon">
+                <div class="caption">
+                    <button class="btn-monitor" 
+                            data-izena="Metal Sonic" 
+                            data-parte="Gaztelekuren parte 03/07/2024-tik" 
+                            data-deskribapena="HE IS THE ULTIMATE OVERLORD" 
+                            onclick="erakutsi(this)"> METAL SONIC </button>
+                    <p style="color:black; margin-top: 10px;">Gaztelekuren parte 03/07/2024tik</p>
+                </div>
+            </div>
+        </section>
+
+        <aside id="informazio_gehiago">
+            <p>Klikatu izen baten xehetasun gehiago ikusteko</p>
+        </aside>
+    </main>
+
+    <script>
+        function erakutsi(botoia) {
+            var panel = document.getElementById("informazio_gehiago");
+            
+            var izena = botoia.dataset.izena;
+            var parte = botoia.dataset.parte;
+            var deskribapena = botoia.dataset.deskribapena;
+            
+            panel.innerHTML = `
+                <h2>${izena}</h2>
+                <p><strong>Data:</strong> ${parte}</p>
+                <p><strong>Informazioa:</strong> ${deskribapena}</p>
+            `;
+        }
+    </script>
+
+    <footer>
+        <h3>KONTAKTU INFORMAZIOA</h3>
+        <p>Tel.: 123456789</p>
+        <p>Kontaktu email-a: eibar@uni.eus</p>
+        <p>Helbidea: Ermua</p>
+    </footer>
+
+</body>
+</html>
