@@ -9,7 +9,7 @@ import java.util.Scanner;
  *
  * @author amaia + imanol + andoni
  */
-public class Programa_Jolasak 
+public class Programa_Jolasak_Menu
 {
     public int ekuazioa(ArrayList a, ArrayList b, int punt)
     {
