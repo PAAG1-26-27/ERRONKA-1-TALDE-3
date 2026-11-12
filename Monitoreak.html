@@ -124,27 +124,21 @@
 
 <body>
 
-    <header>
-        <a href="Sarrera.html" class="logazo">
-            <img src="argazkiak/gazteleku.png" alt="Gazteleku Logo">
-        </a>
-
-        <div class="hizkuntza_b">
-            <button id="eus">EUS |</button>
-            <button id="en">EN</button>
-        </div>
-
-        <div class="b_printzipalak">
-            <button class="EZAGUTU_GAITZAZU" id="Ezagutu gaitzazu">Ezagutu gaitzazu</button>
-            <button class="EKINTZAK" id="Ekintzak">Ekintzak</button>
-            <button class="MONITOREAK" id="Monitoreak">Monitoreak</button>
-        </div>
-
-        <div class="header-eskuina">
-            <button id="PH" style="background-color: darkgreen; color: white; border: none; padding: 6px 12px; border-radius: 4px; cursor: pointer;">Parte hartu</button>
-            <p id="BB" style="margin: 5px 0 0 0; cursor: pointer;">Bazkide bihurtu</p>
-        </div>
-    </header>
+    <header style="margin:0px;padding:0px 8px 0px 8px">
+			<a href="Sarrera.html" class="logazo">
+				<img src="argazkiak/gazteleku.png" alt="Gazteleku Logo">
+			</a>
+			<nav style="width:1000px;margin:90px 16px 0px 16px;">
+				<button class="EZAGUTU_GAITZAZU" id="Ezagutu gaitzazu">EZAGUTU GAITZAZU</button>
+				<button class="EKINTZAK" id="Ekintzak" Style="border:3px solid white;background-color:green;">EKINTZAK</button>
+				<button class="MONITOREAK" id="Monitoreak">MONITOREAK</button>
+			</nav>
+			<div style="margin:8px 0px 8px auto;">
+				<div style="text-align:center"> <a style="cursor:pointer;">EUS </a> | <a style="cursor:pointer;">EN </a> </div>  
+				<button class="phbnagusi" onclick="bazkzaraireki()">Parte hartu </button> <br/>
+				<div style="text-align:center;cursor:pointer"> <a onclick="bazkformireki()">Bazkide bihurtu </a> </div>
+			</div>
+	</header>
 
     <main class="eduki-nagusia">
         <section class="monitore-zerrenda">
