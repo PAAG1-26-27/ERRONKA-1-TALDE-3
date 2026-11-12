@@ -27,11 +27,11 @@ public class ERRONKA_JOLASA {
            Esaldiak [2] = "Gaur nere ordenagailua ______ ___";
            Esaldiak [3] = "Mikelek atzo Anderrei aurpegian ____ _____ ";
            Esaldiak [4] = "Egunero, gosaldu eta gero, nire hortzak _________ ____";
-           Esaldiak [5] = "Anek gehiegi ____ ____ atzo, horeegatik, gaur ez da ondo sentitzen.";
-           Esaldiak [6] = "Anek gehiegi ____ ____ atzo, horeegatik, gaur ez da ondo sentitzen.";
-           Esaldiak [7] = "Anek gehiegi ____ ____ atzo, horeegatik, gaur ez da ondo sentitzen.";
-           Esaldiak [8] = "Anek gehiegi ____ ____ atzo, horeegatik, gaur ez da ondo sentitzen.";
-           Esaldiak [9] = "Anek gehiegi ____ ____ atzo, horeegatik, gaur ez da ondo sentitzen.";
+           Esaldiak [5] = "Irenek, atzo, bere mobila _____ ____.";
+           Esaldiak [6] = "Nere betaurrekoak garbitzeaz ____ _____.";
+           Esaldiak [7] = "Amamak, duela gutxi, _____ _____ hortzak.";
+           Esaldiak [8] = "Nere arrebak, kriston sustoa _____ ____.";
+           Esaldiak [9] = "Duela bi aste, nere urtebetetzea _____ ____.";
        }
         
         //Matriz Erantzun Posibleak
@@ -43,11 +43,11 @@ public class ERRONKA_JOLASA {
             {"Ahaztu dugu", "Ahaztu dut", "",}, //2
             {"jo zion", "jo diot", "jo zitzaion",}, //3
             {"garbitzen ditut", "garbitzen dizkiot", "garbitu ditut",}, //4
-            {"edan zuen", "edan du", "edanda dago",}, //5
-            {"edan zuen", "edan du", "edanda dago",}, //6
-            {"edan zuen", "edan du", "edanda dago",}, //7
-            {"edan zuen", "edan du", "edanda dago",}, //8
-            {"edan zuen", "edan du", "edanda dago",}, //9
+            {"galdu dut", "galdu zitzaion", "galdu zuen",}, //5
+            {"ahaztu da", "ahaztu naiz", "ahaztu nintzen",}, //6
+            {"galdu nuen", "galdu nituen", "galdu zituen",}, //7
+            {"emango nion", "eman nion", "eman dit",}, //8
+            {"izan zen", "izango litzateke", "izango zen",}, //9
         };
         
         //Array Eranztun zuzenak
